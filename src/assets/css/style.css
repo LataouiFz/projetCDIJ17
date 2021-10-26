@@ -1,24 +1,32 @@
 /*---------------------------------------------------------------------
+    File Name: style.css
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
     import Fonts
 ---------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 /*****----------------------------------------
      1) font-family: 'Rajdhani', sans-serif;  
      2) font-family: 'Poppins', sans-serif; 
 ----------------------------------------*****/
+
 /*---------------------------------------------------------------------
     import Files
 ---------------------------------------------------------------------*/
-@import url(./assets/css/animate.min.css);
-@import url(./assets/css/normalize.css);
-@import url(./assets/css/font-awesome.min.css);
-@import url(./assets/css/meanmenu.css);
-@import url(./assets/css/owl.carousel.min.css);
-@import url(./assets/css/slick.css);
-@import url(./assets/css/jquery.fancybox.min.css);
-@import url(./assets/css/jquery-ui.css);
-@import url(./assets/css/nice-select.css);
+
+@import url(./animate.min.css);
+@import url(./normalize.css);
+@import url(./font-awesome.min.css);
+@import url(./meanmenu.css);
+@import url(./owl.carousel.min.css);
+@import url(./slick.css);
+@import url(./jquery.fancybox.min.css);
+@import url(./jquery-ui.css);
+@import url(./nice-select.css);
 
 /*---------------------------------------------------------------------
     skeleton
@@ -291,7 +299,7 @@ button {
 	color: #114c7d;
 	font-weight: 400;
 	font-size: 28px;
-	background-image: url('./assets/images/fevicon.png');
+	background-image: url('../images/fevicon.png');
 	background-repeat: no-repeat;
 	padding-left: 55px;
 	letter-spacing: -0.5px;
@@ -457,14 +465,14 @@ header {
     background: #fff;
     min-height: 122px;
     text-align: center;
-    line-height: 105px;
+    line-height: 120px;
 }
 
 .logo_section::after {
     position: absolute;
     width: 58px;
     height: 122px;
-    background: url('./assets/images/head_d.png');
+    background: url('../images/head_d.png');
     content: "";
     right: -57px;
 }
@@ -1076,13 +1084,13 @@ nav.main-menu {
 	border-bottom: solid #eee 1px;
 }
 
-/*.main-menu ul>li .sub-down li a::before {}*/
+.main-menu ul>li .sub-down li a::before {}
 
 .main-menu ul>li .sub-down li a:hover {
 	color: #111111;
 }
 
-/*.main-menu ul>li .sub-down li a:hover::before {}*/
+.main-menu ul>li .sub-down li a:hover::before {}
 
 .main-menu ul li:first-child {
 	margin-left: 0;
@@ -1160,7 +1168,7 @@ nav.main-menu {
 	padding: 15px 0px;
 }
 
-/*.sub-full {}*/
+.sub-full {}
 
 .simple-down {
 	padding: 15px;
@@ -1401,21 +1409,21 @@ nav.main-menu {
 
 .heroslider .slider-01 {
 	width: 100%;
-	background-image: url(./assets/images/slider_1.png);
+	background-image: url(../images/slider-01.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .heroslider .slider-02 {
 	width: 100%;
-	background-image: url(./assets/images/slider_1.png);
+	background-image: url(../images/slider-02.jpg);
 	background-size: cover;
 	background-position: center;
 }
 
 .heroslider .slider-03 {
 	width: 100%;
-	background-image: url(./assets/images/slider_1.png);
+	background-image: url(../images/slider-03.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -1659,13 +1667,11 @@ input[type="radio"] .styled:checked+label::after {
 
 .menu-area {
     float: left;
-    width: 104%;
-    height: 124px;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #0f0824;
 }
 
 .limit-box {
@@ -1680,9 +1686,9 @@ input[type="radio"] .styled:checked+label::after {
 
 .banner-slider {
     margin-top: 30px;
-    background-image: url("./assets/images/banner_bg.png");
+    background-image: url("../images/banner_bg.png");
     width: 100%;
-    min-height: 400px;
+    min-height: 815px;
     background-size: cover;
 }
 
@@ -1724,7 +1730,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .slider_cont_section h4 {
-    color:  #009788;
+    color: #006;
     font-size: 35px;
     font-weight: 600;
     padding: 0;
@@ -1732,10 +1738,10 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .slider_cont_section h3 {
-	font-size: 33px;
+    font-size: 85px;
     color: #000;
     font-weight: 600;
-    margin: -88px -9px 4px -60px;
+    margin: -25px 0 25px 0;
     padding: 0;
     line-height: normal;
 }
