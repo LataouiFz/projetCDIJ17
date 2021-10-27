@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 import { MatRadioModule } from '@angular/material/radio';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { MatRadioModule } from '@angular/material/radio';
     MatRadioModule,
     MatSelectModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
