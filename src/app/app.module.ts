@@ -15,6 +15,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 import { MatRadioModule } from '@angular/material/radio';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { DebatlibreComponent } from './debatlibre/debatlibre.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     FooterComponent,
     HeaderComponent,
     OrganiserdebatComponent,
-    TousdebatsComponent
+    TousdebatsComponent,
+    DebatlibreComponent
   ],
   imports: [
     BrowserModule,
