@@ -1,0 +1,59 @@
+<!-- <table>
+        <tr>
+            <td><mat-icon>face</mat-icon></td>
+            <td>{{ item.id }}</td>
+        </tr>
+        <tr>
+            <td>{{ item.author }}</td>
+            <td><a mat-button href="LetsDebate">{{ item.title }}</a></td>
+        </tr>
+        <tr>
+            <td>Type: {{item.type}}</td>
+            <td>                 
+                <p>You selected theme: {{item.theme}}</p>
+            </td>
+        </tr>
+</table> -->
+<p>worked !!</p>
+<p>{{id}}</p>
+<p>{{Debat.container}}</p>
+
+<br/>
+<form>
+    <table>
+        <tr>
+            <td><label>My name</label></td>
+            <td><input type="text" name="authorName" [(ngModel)]="authorName"/></td>
+        </tr>
+        <tr>
+            <td><label>My message</label></td>
+            <td><input type="text" name="message" [(ngModel)]="message"/></td>
+        </tr>
+    </table>
+    <button mat-raised-button color="accent" (click)="addMsg()">Submit</button>
+</form>
+
+<div>
+    <table>
+        <div *ngFor="let msg of Msgs">
+            <tr>
+                <td><mat-icon>face</mat-icon></td>
+                <td>{{ msg.id }}</td>
+            </tr>
+            <tr>
+                <td>{{ msg.author }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Message: {{msg.message}}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Date de creation</td>
+                <td>                 
+                    <p>{{ msg.date?.toDate() | date:'medium'}}</p>
+                </td>
+            </tr>
+        </div>
+    </table>
+</div>
