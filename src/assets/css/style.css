@@ -131,28 +131,6 @@ p {
     color: #212222;
 }
 
-.titreglissant
-{
-	animation-duration: 3s;
-    animation-name: glissement;
-    animation-iteration-count: infinite;
-	animation-play-state: running;
-}
-@keyframes glissement
-{
-	from
-	{
-      margin-right: 100%;
-	  width: 200%;
-	}
-	to
-	{
-      margin-right: 0%;
-	  width: 100;
-	}
-}
-
-
 a {
 	color: #222222;
 	text-decoration: none;
@@ -272,6 +250,7 @@ button {
 .blog_blue_bg .row {
     position: relative;
     z-index: 2;
+	width: 100%;
 }
 
 /**-- heading section --**/
@@ -902,7 +881,7 @@ nav.main-menu {
 	display: inline-block;
 	line-height: 40px;
 	text-align: center;
-	color: #fff;
+	color: #ffffff;
 	position: relative;
 	border-radius: 2px;
 }
@@ -1417,6 +1396,7 @@ nav.main-menu {
 }
 
 .heroslider .container {
+	
 	position: relative;
 	height: 100%;
 	padding-left: 0;
@@ -2022,15 +2002,17 @@ footer {
 
 .contact_information {
     margin-top: 50px;
-    float: left;
+	padding-left: 50px;
     width: 100%;
+	padding-top: -35px;
+	padding-bottom: 35px;
 }
 
 .contact_information li {
     display: flex;
-    font-size: 15px;
-    color: #ffff;
-    font-weight: 300;
+    font-size: 50px;
+    /*color: #fff;*/
+    font-weight: 300%;
     line-height: 18px;
     margin: 10px 0;
     float: left;
@@ -2039,7 +2021,6 @@ footer {
 
 .contact_information li span:nth-child(1) {
     margin-right: 15px;
-	
 }
 
 ul.social_icon {
@@ -2047,8 +2028,9 @@ ul.social_icon {
     margin-top: 20px;
 }
 
-ul.social_icon li {
-    background:#fff;
+
+ul.social_icon li   {
+    background:none;
     float: left;
     width: 36px;
     height: 36px;
@@ -2060,10 +2042,37 @@ ul.social_icon li {
 
 ul.social_icon li a {
     color: #0f0824;
-    font-size: 18px;
+    font-size: 50px;
+	border-radius: 100px;
+	width: 200px;
+	font-weight:bold;
+	font-family:'Times New Roman' ;
 }
+/* .f{
+    color:#3b5998;
+  }
+.in{
+	color:#0077b5 ;
+}
+.g{
+	color:#db4a39;
+}
+.t{
+	color:#00acee ;
+}*/
 
-
+ .f:hover,  .f:focus{
+	color:#3b5998 ;
+}
+ .in:hover,  .in:focus{
+	color:#0077b5 ;
+}
+ .g:hover,  .g:focus{
+	color:#db4a39;
+}
+.t:hover,  .t:focus{
+	color:#00acee ;
+}
 .cpy {
     text-align: center;
 }
@@ -2139,46 +2148,46 @@ ul.social_icon li a {
     min-height: 480px;
 }
 
-.wdt {height: 250px !important;}
-.test {	
-	display: flex;
-}
-.test h1{
-	list-style: none;
-	color: #484848;
-	font-family: arial;
-	font-size: 40px;
-	letter-spacing:5px;
-	animation: flash 0.8s linear infinite;
+.wdt {height: 250px !important;
 }
 
+.online
+{
+  /*position: fixed;*/
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.test
+{
+  position: absolute;
+  transform: translate(50%,50%);
+  padding-top: 5%;
+  display: flex;
+  padding-right: 80%;
+}
+.test li
+{
+	list-style: none;
+	color: #146325;
+	font-size: 20px;
+	letter-spacing: 5px;
+	animation: flash 1.4s linear infinite;
+}
 @keyframes flash{
 	0% {
-		color: #484848;
-		text-shadow: none;
+         color: #146325;
+		 text-shadow: none;
+	   }
+	90% {
+		 color: #146325;
+         text-shadow: none;
 	}
-	90%
-	{
-		color: #484848;
-		text-shadow: none;
-	}
-	100%{
-		color: #ff6c00;
-		text-shadow: 0 0 7px green, 0 0 50px #ff6c00 ;
+	100% {
+		  color: #fff900;
+		  text-shadow: 0 0 7px #fff900, 0 0 50px #fff900;
 	}
 }
-.test h1:nth-child(1){
-	animation-delay: .1s;
-}
-.test h1:nth-child(2){
-	animation-delay: .1s;
-}
-.test h1:nth-child(3){
-	animation-delay: .1s;
-}
-.test h1:nth-child(4){
-	animation-delay: .1s;
-}
+
 
 
 
