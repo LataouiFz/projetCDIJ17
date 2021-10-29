@@ -2163,15 +2163,17 @@ ul.social_icon li a {
   transform: translate(50%,50%);
   padding-top: 5%;
   display: flex;
-  padding-right: 80%;
+  padding-right: 35%;
+  margin-left: 25%;
 }
 .test li
 {
 	list-style: none;
 	color: #146325;
 	font-size: 20px;
-	letter-spacing: 5px;
+	letter-spacing: normal;
 	animation: flash 1.4s linear infinite;
+	padding-right: 20%;
 }
 @keyframes flash{
 	0% {
