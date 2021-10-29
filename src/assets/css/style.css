@@ -131,6 +131,28 @@ p {
     color: #212222;
 }
 
+.titreglissant
+{
+	animation-duration: 3s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+@keyframes glissement
+{
+	from
+	{
+      margin-right: 100%;
+	  width: 200%;
+	}
+	to
+	{
+      margin-right: 0%;
+	  width: 100;
+	}
+}
+
+
 a {
 	color: #222222;
 	text-decoration: none;
@@ -880,7 +902,7 @@ nav.main-menu {
 	display: inline-block;
 	line-height: 40px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	position: relative;
 	border-radius: 2px;
 }
@@ -2007,7 +2029,7 @@ footer {
 .contact_information li {
     display: flex;
     font-size: 15px;
-    color: #fff;
+    color: #ffff;
     font-weight: 300;
     line-height: 18px;
     margin: 10px 0;
@@ -2017,6 +2039,7 @@ footer {
 
 .contact_information li span:nth-child(1) {
     margin-right: 15px;
+	
 }
 
 ul.social_icon {
@@ -2025,7 +2048,7 @@ ul.social_icon {
 }
 
 ul.social_icon li {
-    background: #fff;
+    background:#fff;
     float: left;
     width: 36px;
     height: 36px;
@@ -2039,6 +2062,7 @@ ul.social_icon li a {
     color: #0f0824;
     font-size: 18px;
 }
+
 
 .cpy {
     text-align: center;
@@ -2116,8 +2140,45 @@ ul.social_icon li a {
 }
 
 .wdt {height: 250px !important;}
+.test {	
+	display: flex;
+}
+.test h1{
+	list-style: none;
+	color: #484848;
+	font-family: arial;
+	font-size: 40px;
+	letter-spacing:5px;
+	animation: flash 0.8s linear infinite;
+}
 
-
+@keyframes flash{
+	0% {
+		color: #484848;
+		text-shadow: none;
+	}
+	90%
+	{
+		color: #484848;
+		text-shadow: none;
+	}
+	100%{
+		color: #ff6c00;
+		text-shadow: 0 0 7px green, 0 0 50px #ff6c00 ;
+	}
+}
+.test h1:nth-child(1){
+	animation-delay: .1s;
+}
+.test h1:nth-child(2){
+	animation-delay: .1s;
+}
+.test h1:nth-child(3){
+	animation-delay: .1s;
+}
+.test h1:nth-child(4){
+	animation-delay: .1s;
+}
 
 
 

@@ -8,33 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   name = 'Angular';
   imageObject = [{
-      image: '../../assets/images/logo.jpg',
-      thumbImage: '../../assets/images/logo.jpg',
-      title: 'tiiitre'
+      Image: "../../assets/images/debat1.png",
+      thumbImage: '../../assets/images/debat1.png',
+      title: 'Soyez l\'animateur du débat ou participant'
   }, {
-      image: '../../assets/images/debat2.jpg',
-      thumbImage: '../../assets/images/debat2.jpg',
-      title: 'tiiitre'
+      image: '../../assets/images/debat2.png',
+      thumbImage: '../../assets/images/debat2.png',
+     //title: 'tiiitre'
   }, {
-      image: '../../assets/images/blog2.png',
-      thumbImage: '../../assets/images/blog2.png',
-      title: 'tiiitre'
+      image: '../../assets/images/debat3.png',
+      thumbImage: '../../assets/images/debat3.png',
+      //title: 'tiiitre'
   },{
-      image: '../../assets/images/logo.jpg',
-      thumbImage: '../../assets/images/logo.jpg',
-      title: 'tiiitre'
-  }, {
-      image: '../../assets/images/blog2.png',
-      thumbImage: '../../assets/images/blog2.png'
-  }, {
-      image: '../../assets/images/debat2.jpg',
-      thumbImage: '../../assets/images/debat2.jpg',
-      title: 'tiiitre.'
+      image: '../../assets/images/statdark.png',
+      thumbImage: '../../assets/images/statdark.png',
+      //title: 'tiiitre'
+  },{
+      image: '../../assets/images/netdark.png',
+      thumbImage: '../../assets/images/netdark.png',
+      title:'Faites partie de notre grand résaux'
   }];
 
   constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }
