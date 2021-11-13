@@ -219,10 +219,11 @@ button {
 
 .full {
 	width: 100%;
-	float: left;
-	margin: 0;
-	padding: 0;
-}
+    float: left;
+    margin: 6px;
+    padding: 5px;
+    background: whitesmoke;
+	}
 
 .blog_blue_bg {
     position: relative;
@@ -1900,9 +1901,9 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .contact_text p {
-    color: #827f7f;
-    font-size: 16px;
-    line-height: 21px;
+	color: #111111;
+    font-size: 19px;
+    line-height: 20px;
 }
 
 .comment_blog_line {

@@ -1,6 +1,6 @@
-import { Subject } from "./Subject";
+import { Debats } from "./Debats";
 
-export class LiveSubject extends Subject {
+export class LiveSubject extends Debats {
     duree?: Number;
     typeRep?: string;
 }

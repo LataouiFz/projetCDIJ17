@@ -6,13 +6,14 @@ import { OrganiserdebatComponent } from './organiserdebat/organiserdebat.compone
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DebatlibreComponent } from './debatlibre/debatlibre.component';
+
 const routes: Routes = [
   { path:'home', component: HomeComponent },
   { path:'organiserdebat', component: OrganiserdebatComponent },
   { path:'tousdebats', component: TousdebatsComponent },
   { path:'header', component: HeaderComponent },
   { path:'footer', component: FooterComponent },
-  { path:'debatlibre', component: DebatlibreComponent },
+  { path:'debatlibre/:id', component: DebatlibreComponent },
   { path: '',   redirectTo: 'home', pathMatch: 'full' },
 ]; 
 

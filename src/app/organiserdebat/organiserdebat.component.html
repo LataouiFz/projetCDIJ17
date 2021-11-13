@@ -17,7 +17,8 @@
                 <div class="full comment_form">
                     <div class="col-md-12">
                         <div class="row">
-                            <form (submit)="addSubject()" style="width: -webkit-fill-available; font-weight:600; color: #0f0824">
+                            <form (submit)="addSubject()"
+                                style="width: -webkit-fill-available; font-weight:600; color: #0f0824">
                                 <label>Type du débat : </label>
                                 <div>
                                     <input type="radio" name="type" [(ngModel)]="type" value="libre"
@@ -29,20 +30,10 @@
                                 </div>
                                 <div>
                                     <label>Thème :</label>
-
-                                    <mat-form-field appearance="fill">
-                                        <mat-label>-Choisissez une option</mat-label>
-                                        <mat-select [(value)]="theme">
-                                            <mat-option>None</mat-option>
-                                            <mat-option value="Informatique">Informatique</mat-option>
-                                            <mat-option value="Science">Science</mat-option>
-                                            <mat-option value="Animes">Animes</mat-option>
-                                            <mat-option value="Autres">Autres</mat-option>
-                                        </mat-select>
-                                    </mat-form-field>
-
+                                    <select [(ngModel)]="theme">
+                                        <option *ngFor="let item of themesList" [ngValue]="item">{{item}}</option>
+                                    </select>
                                 </div>
-
                                 <div *ngIf="theme === 'Autres'">
                                     <div>
                                         <label>Autres</label>
@@ -51,15 +42,18 @@
                                 </div>
                                 <div>
                                     <label>Nom d'utilisateur :</label>
-                                    <input type="text" name="authorName" [(ngModel)]="authorName" placeholder="Entrez un nom d'utilisateur" />
+                                    <input type="text" name="authorName" [(ngModel)]="authorName"
+                                        placeholder="Entrez un nom d'utilisateur" />
                                 </div>
                                 <div>
                                     <label>Titre du débat :</label>
-                                    <input type="text" name="title" [(ngModel)]="title" placeholder="Entrez le titre du débat"/>
+                                    <input type="text" name="title" [(ngModel)]="title"
+                                        placeholder="Entrez le titre du débat" />
                                 </div>
                                 <div>
                                     <label>Sujet :</label>
-                                    <textarea cols="30" row="10" name="container" [(ngModel)]="container" placeholder="..."></textarea>
+                                    <textarea cols="30" row="10" name="container" [(ngModel)]="container"
+                                        placeholder="..."></textarea>
                                 </div>
                                 <div *ngIf="type === 'guide'">
                                     <label>Type de réponses :</label>
@@ -67,9 +61,9 @@
                                         <label><input type="radio" name="typeRep" [(ngModel)]="typeRep" value="normal"
                                                 style="width: 12%;height: 12px;    width: 216px;" />Commentaires</label>
                                         <label><input type="radio" name="typeRep" [(ngModel)]="typeRep" value="yn"
-                                            style="width: 12%;height: 12px;    width: 216px;" />Oui & Non</label>
+                                                style="width: 12%;height: 12px;    width: 216px;" />Oui & Non</label>
                                         <label><input type="radio" name="typeRep" [(ngModel)]="typeRep" value="custm"
-                                            style="width: 12%;height: 12px;    width: 216px;" />Personnalisé</label>
+                                                style="width: 12%;height: 12px;    width: 216px;" />Personnalisé</label>
 
                                     </div>
                                     <div>
@@ -84,7 +78,7 @@
                     <div class="row margin_top_30">
                         <div class="col-md-12">
                             <div class="center">
-                                <button>Valider</button>
+                                <button (click)="addSubject()">Valider</button>
                             </div>
                         </div>
                     </div>
