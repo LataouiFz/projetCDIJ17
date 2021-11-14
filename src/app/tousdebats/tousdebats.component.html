@@ -9,28 +9,62 @@
         </div>
     </div>
 </div>
-<section class="layout_padding">
+<div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter"
+        aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+<section id="sidebar">
+    
+    <div>
+        <h6 class="p-1 border-bottom">Filtrer par :</h6>
+    </div>
+    <br>
+    <div>
+        <h6>Thèmes</h6>
+        <form class="ml-md-2">
+            <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="boring"> <label
+                    for="boring" class="pl-1 pt-sm-0 pt-1">Informatique</label> </div>
+            <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="ugly"> <label
+                    for="ugly" class="pl-1 pt-sm-0 pt-1">Cuisine</label> </div>
+            <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="notugly"> <label
+                    for="notugly" class="pl-1 pt-sm-0 pt-1">Sport</label> </div>
+            <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="notugly"> <label
+                    for="notugly" class="pl-1 pt-sm-0 pt-1">Sciences</label> </div>
+            <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="notugly"> <label
+                    for="notugly" class="pl-1 pt-sm-0 pt-1">Dév</label> </div>
+            <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="notugly"> <label
+                    for="notugly" class="pl-1 pt-sm-0 pt-1">Games</label> </div>
+        </form>
+    </div>
+    <br>
+    <div>
+        <h6>Statut</h6>
+        <form class="ml-md-2">
+            <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="boring"> <label
+                    for="boring" class="pl-1 pt-sm-0 pt-1">En cours</label> </div>
+            <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="ugly"> <label
+                    for="ugly" class="pl-1 pt-sm-0 pt-1">Terminé</label> </div>
+           
+        </form>
+    </div>
+</section>
+
+<section id="layout_padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="full comment_form">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="card" style="width: 18rem;" *ngFor="let item of Debats">
-                                <img src="../../assets/images/comments.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ item.title }}</h5>
-                                    <p class="card-text">{{ item.author }}</p>
-                                    <p>theme: {{item.theme}}</p>
-                                    <p class="card-text">Date: {{item.date?.toDate() | date:'short'}}</p>
-                                    <a href="debatlibre/{{item.id}}"
-                                        class="btn btn-primary stretched-link">Consulter</a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-lg-3 offset-lg-0 col-sm-4 offset-sm-2 col-11 offset-1" *ngFor="let item of Debats">
+                <div class="card"> <img class="card-img-top"
+                        src="https://images.pexels.com/photos/1125137/pexels-photo-1125137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text" style="font-weight: bold;">{{ item.title }}</p>
+                        <p>Animé par :{{ item.author }}</p>
+                        <p>theme: {{item.theme}}</p>
+                        <p>Date: {{item.date?.toDate() | date:'short'}}</p>
+                        <a href="debatlibre/{{item.id}}" class="btn btn-primary stretched-link">Consulter</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
 </section>
